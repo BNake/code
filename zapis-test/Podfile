@@ -1,0 +1,34 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'zapis-test' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+   # Основная библиотека MapKit.
+  pod 'YandexMapKit', '3.4'
+  # Дополнительные модули MapKit.
+  # Удалите зависимости если ваше приложение не использует их.
+  pod 'YandexMapKitDirections', '3.4'
+  pod 'YandexMapKitPlaces', '3.4'
+  pod 'YandexMapKitSearch', '3.4'
+  pod 'YandexMapKitTransport', '3.4'
+  pod 'SnapKit'
+  pod 'Kingfisher'
+  pod 'Alamofire'
+  pod 'IQKeyboardManagerSwift'
+  pod 'SVProgressHUD'
+  pod 'XLPagerTabStrip', '~> 8.0'
+
+  # Pods for zapis-test
+
+  target 'zapis-testTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'zapis-testUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
